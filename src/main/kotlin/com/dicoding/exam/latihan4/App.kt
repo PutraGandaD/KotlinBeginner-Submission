@@ -26,11 +26,16 @@ package com.dicoding.exam.latihan4
  *  value: 100Ltr
  *
  */
-fun vehicle() = mapOf<String, String>(
+fun vehicle() = mapOf( // more efficient
     "type" to "motorcycle",
     "maxSpeed" to "230Km/s",
     "maxTank" to "100Ltr"
 )
+/*
+    Note from Dicoding Reviewer =
+    Karena kamu langsung menginisiasikan nilai pada argumen fungsi mapOf() ini,
+    kamu dapat menghapus deklarasi tipe datanya.
+ */
 
 fun main() {
     println("""

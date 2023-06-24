@@ -17,13 +17,12 @@ package com.dicoding.exam.latihan1
  *  Sesuaikan fungsi di bawah ini dengan kode untuk mengecek apakah parameter number
  *  merupakan angka genap
  */
-fun isEvenNumber(number: Int): Boolean {
-    if (number % 2 == 0) {
-        return true
-    } else {
-        return false
-    }
-}
+fun isEvenNumber(number: Int) = number % 2 == 0 //more efficient
+/*
+ Note from Dicoding Reviewer =
+ karena fungsi ini hanya memiliki satu statement, kamu bisa menyederhanakannya lagi dengan expression body.
+ Kamu juga bisa menghapus return type pada fungsi ini.
+ */
 
 /**
  *  TODO 2

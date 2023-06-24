@@ -22,10 +22,13 @@ package com.dicoding.exam.latihan2
  *  Jika valueC bernilai null, silakan tetapkan nilai 50 sebagai nilai default-nya
  */
 fun calculate(valueA: Int, valueB: Int, valueC: Int?): Int {
-    var nullableValueC = valueC ?:50
-
-    return valueA + (valueB - nullableValueC)
+    return valueA + (valueB - (valueC ?: 50)) // more efficient, inline with elvis operator
 }
+/*
+    Note from Dicoding Reviewer =
+    Karena variabel nullableValueC yang kamu buat hanya digunakan ketika return saja,
+    maka lebih baik dua baris kode di atas ditulis secara inline
+ */
 
 /**
  *  TODO 2
